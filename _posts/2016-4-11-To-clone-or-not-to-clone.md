@@ -11,7 +11,7 @@ Check out the code below. I must say I wasn't expecting the result I saw.
 {% highlight javascript linenos %}
     var alphabet = ['a', 'b', 'c'];
     var newAlphabet = source;
-    destination.push('d');
+    newAlphabet.push('d');
 
     console.log(alphabet);
     console.log(newAlphabet);
@@ -22,7 +22,7 @@ Surprisingly for me the output was:
     ["a", "b", "c", "d"]
 {% endhighlight %}
 
-Wait a minute. Wasnt't I just modifying destination array?   
+Wait a minute. Wasnt't I just modifying newAlphabet array?   
 Not really. Turns out that:
 {% highlight javascript %}
     var newAlphabet = alphabet;
