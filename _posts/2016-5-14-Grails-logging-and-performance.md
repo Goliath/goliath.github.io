@@ -33,8 +33,8 @@ To do so we need to turn off DEBUG and modify the code:
     }
 {% endhighlight %}
 
-Well, after finishing the loop, sum value is 1000, it was incremented even when information was not logged. 
-That means that every time you log heavy operations like e.g. object.dump() it will get executed, even if the log level is not suppose to show that line.
+Well, after finishing the loop, sum value is 1000 - it was incremented even when information was not logged. 
+That means that every time you log heavy operations like e.g. object.dump() - they will get executed, even if the log level is not suppose to show that line.
 
 # Solution
 
