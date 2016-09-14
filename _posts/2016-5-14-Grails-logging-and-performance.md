@@ -20,11 +20,11 @@ Let's say I want to log a very often executed code.
 {% endhighlight %}
 
 I use log.debug so my information is logged only if my project configuration allows that.
-That way if we turn off DEBUG the logged line should not affect application speed.
+That way if we turn off DEBUG, the logged line should not affect application speed.
 But is that really true?
 
-Let's check if the logged value is really accessed?  
-We need to turn off DEBUG and execute following code:  
+Let's check if the logged value is really not accessed?  
+To do so we need to turn off DEBUG and modify the code:  
 
 {% highlight groovy linenos %}
     Long sum = 0
